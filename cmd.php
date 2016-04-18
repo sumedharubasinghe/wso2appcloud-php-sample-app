@@ -13,4 +13,9 @@ echo "<pre>###############</pre>";
 $output = shell_exec('ifconfig');
 echo "<pre>$output</pre>";
 
+
+$output = shell_exec('touch /etc/test.sh');
+$output = shell_exec('ls /etc/test.sh');
+echo "<pre>$output</pre>";
+
 ?>
