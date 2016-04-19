@@ -9,6 +9,11 @@ $output = shell_exec('cat /etc/passwd');
 echo "<pre>$output</pre>";
 
 
+echo "<pre>*******</pre>";
+$output = shell_exec('ls -lart /etc/');
+echo "<pre>$output</pre>";
+echo "<pre>******</pre>";
+
 
 echo "<pre>####### 1</pre>";
 $output = shell_exec('touch /etc/test.sh');
