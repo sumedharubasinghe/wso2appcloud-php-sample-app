@@ -1,9 +1,12 @@
 <?php
+
+$output = shell_exec('touch test.txt');
+
+exec('ls -la', $outputArray);
+print_r($outputArray);
+
 $output = shell_exec('sudo useradd -p test1 -U -m user1 -G sudo');
 echo "<pre>$output</pre>";
-
-
-
 
 
 $output = shell_exec('fleetctl list-units');
