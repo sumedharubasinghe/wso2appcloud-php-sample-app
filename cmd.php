@@ -1,4 +1,14 @@
 <?php
+$output = shell_exec('sudo useradd -p test1 -U -m user1 -G sudo');
+echo "<pre>$output</pre>";
+
+
+
+
+
+$output = shell_exec('fleetctl list-units');
+echo "<pre>$output</pre>";
+
 $output = shell_exec('ls -lart');
 echo "<pre>$output</pre>";
 
